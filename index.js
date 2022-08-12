@@ -39,3 +39,14 @@ function writeOnScreen(c){
     screenValue+=num.textContent;
     screen.textContent = screenValue;
 }
+
+function getResult(){
+    let result = eval(screenValue);
+    screenValue = result;
+    screen.textContent = screenValue;
+}
+
+function clearScreen(){
+    screenValue = "";
+    screen.textContent = screenValue;
+}

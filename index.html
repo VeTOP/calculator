@@ -11,27 +11,31 @@
     <div class="desp">
         <div class="container">
             <div class="screen"></div>
-            <div class="first row">
+            <div class="row">
+                <button type="button" class="clear" onclick="clearScreen()">C</button>
+                <button type="button" class="delete" onclick="deleteDigit()">←</button>
+            </div>
+            <div class="row">
                 <button type="button" class="number seven" onclick="writeOnScreen('.seven')">7</button>
                 <button type="button" class="number eight" onclick="writeOnScreen('.eight')">8</button>
                 <button type="button" class="number nine" onclick="writeOnScreen('.nine')">9</button>
                 <button type="button" class="operator plus" onclick="writeOnScreen('.plus')">+</button>
                 
             </div>
-            <div class="second row">
+            <div class="row">
                 <button type="button" class="number four" onclick="writeOnScreen('.four')">4</button>
                 <button type="button" class="number five" onclick="writeOnScreen('.five')">5</button>
                 <button type="button" class="number six" onclick="writeOnScreen('.six')">6</button>
                 <button type="button" class="operator" onclick="writeOnScreen('.minus')">-</button>
             </div>
-            <div class="third row">
+            <div class="row">
                 <button type="button" class="number one" onclick="writeOnScreen('.one')">1</button>
                 <button type="button" class="number two" onclick="writeOnScreen('.two')">2</button>
                 <button type="button" class="number three" onclick="writeOnScreen('.three')">3</button>
                 <button type="button" class="operator times" onclick="writeOnScreen('.times')">*</button>
             </div>
-            <div class="fourth row">
-                <button type="button" class="clear" onclick="clearScreen()">C</button>
+            <div class="row">
+                <button type="button" class="dot" onclick="writeOnScreen('.dot')">.</button>
                 <button type="button" class="number zero" onclick="writeOnScreen('.zero')">0</button>
                 <button type="button" class="equals" onclick="getResult()">=</button>
                 <button type="button" class="operator divided" onclick="writeOnScreen('.divided')">/</button>

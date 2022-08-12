@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="desp">
+        <div class="container">
+            <div class="screen">Dummy nums 123</div>
+            <div class="first row">
+                <button type="button" class="number seven" onclick="writeOnScreen('.seven')">7</button>
+                <button type="button" class="number eight" onclick="writeOnScreen('.eight')">8</button>
+                <button type="button" class="number nine" onclick="writeOnScreen('.nine')">9</button>
+                <button type="button" class="operator">+</button>
+                
+            </div>
+            <div class="second row">
+                <button type="button" class="number four" onclick="writeOnScreen('.four')">4</button>
+                <button type="button" class="number five" onclick="writeOnScreen('.five')">5</button>
+                <button type="button" class="number six" onclick="writeOnScreen('.six')">6</button>
+                <button type="button" class="operator">-</button>
+            </div>
+            <div class="third row">
+                <button type="button" class="number one" onclick="writeOnScreen('.one')">1</button>
+                <button type="button" class="number two" onclick="writeOnScreen('.two')">2</button>
+                <button type="button" class="number three" onclick="writeOnScreen('.three')">3</button>
+                <button type="button" class="operator">x</button>
+            </div>
+            <div class="fourth row">
+                <button type="button" class="clear">C</button>
+                <button type="button" class="number zero" onclick="writeOnScreen('.zero')">0</button>
+                <button type="button" class="equals">=</button>
+                <button type="button" class="operator">:</button>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
